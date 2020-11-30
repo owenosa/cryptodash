@@ -1,0 +1,53 @@
+.largeBox{
+    grid-area: largebox;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 
+    0 2px 1px rgba(0,0,0,0.09), 
+    0 4px 2px rgba(0,0,0,0.09), 
+    0 8px 4px rgba(0,0,0,0.09), 
+    0 16px 8px rgba(0,0,0,0.09), 
+    0 32px 16px rgba(0,0,0,0.09)
+}
+
+.largeBox_info{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.largeBox_selectors{
+    float: right;
+    margin-bottom: 10px;
+}
+
+.largeBox_selectors > ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.largeBox_selectors > ul > li{
+    padding: 0 1em;
+    cursor: pointer;
+    border: none;
+    margin-right: 3px;
+    border-radius: 25px;
+}
+
+.largeBox_selectors > ul > li:hover{
+    background-color: rgb(223, 219, 219);
+}
+
+.largeBox_selectors > ul > li.active{
+    background-color: rgb(223, 219, 219);
+}
+
+.largeBox_info > #options{
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    text-align: center;
+    outline: none;
+    font-weight: bold;
+}

@@ -1,0 +1,54 @@
+#balance{grid-area: smallbox1;}
+
+#bitcoin{grid-area: smallbox2;}
+
+#ethereum{grid-area: smallbox3;}
+
+#stellar{grid-area: smallbox4;}
+
+#tether{ grid-area: smallbox5;}
+
+.smallBox{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 
+    0 2px 1px rgba(0,0,0,0.09), 
+    0 4px 2px rgba(0,0,0,0.09), 
+    0 8px 4px rgba(0,0,0,0.09), 
+    0 16px 8px rgba(0,0,0,0.09), 
+    0 32px 16px rgba(0,0,0,0.09);  
+
+}
+
+.smallBox_info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    padding: 0 20px
+}
+
+.smallBox_numbers{
+    display: flex;
+    align-items: center;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    padding: 0 20px;
+}
+
+.smallBox-price{
+    margin-right: 25px;
+}
+
+.smallBox-icon{
+    width: 30px;
+    margin-right: 1em;
+}
+
+.smallBox-roc{
+    color: black;
+}
+
+.smallBox_graph{
+    height: 111px;
+}

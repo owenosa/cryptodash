@@ -1,0 +1,28 @@
+.sidebar{
+    background-color: #003049;
+    grid-area: sidebar;
+    border-right: 2px solid #cfcfcaa2;
+    color: white;
+}
+
+.sidebar > ul{
+    display: block;
+    margin: 40px 20px;
+    list-style: none;
+}
+
+.sidebar > ul > li {
+    height: 70px;
+    padding: 15px 10px;
+    margin-top: 5px;
+
+}
+
+.sidebar > ul > li.option:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+
+li.active{
+    background-color: #24455796;
+}

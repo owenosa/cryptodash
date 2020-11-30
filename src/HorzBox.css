@@ -1,0 +1,101 @@
+.horzBox{
+    grid-area: horzbox;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 
+    0 2px 1px rgba(0,0,0,0.09), 
+    0 4px 2px rgba(0,0,0,0.09), 
+    0 8px 4px rgba(0,0,0,0.09), 
+    0 16px 8px rgba(0,0,0,0.09), 
+    0 32px 16px rgba(0,0,0,0.09)
+}
+
+form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#buyOrSell > p{
+    text-align: center;
+    width: 80px;
+    padding: 5px;
+    margin-top: 5px;
+    border: 3px solid rgba(0, 0, 0, 0.425);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#buyOrSell > p.active{
+    background-color: #002f4948;
+}
+
+#buyOrSell > p:hover{
+    opacity: .5;
+}
+
+
+#selections > #buyActive, #sellActive{
+    display: flex;
+    align-items: center;
+}
+
+#selections > #buyActive > p, #selections > #sellActive > p{
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 95px;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#selections > #buyActive > #options, #selections > #sellActive > #options{
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+    padding: 8px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+#horzBox-info{
+    text-align: center;
+    display: flex;
+    
+    align-items: center;
+}
+
+#horzBox-info > input{
+    width: 40px;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+#horzBox-info > p > span{
+    font-weight: 800;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+button#confirm{
+    background-color: #002f4948;
+    outline: black;
+    border-radius: 5px;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+}
