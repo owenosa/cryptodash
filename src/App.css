@@ -4,10 +4,10 @@
     grid-template-areas: 
     'sidebar header header header header header header'
     'sidebar smallbox1 smallbox1 smallbox2 smallbox2 smallbox3 smallbox3'
-    'sidebar smallbox4 smallbox4 smallbox5 smallbox5 longbox longbox'
-    'sidebar horzbox horzbox horzbox horzbox longbox longbox'
+    'sidebar smallbox4 smallbox4 smallbox5 smallbox5 assetbox assetbox'
+    'sidebar horzbox horzbox horzbox horzbox assetbox assetbox'
     'sidebar largebox largebox largebox largebox longbox longbox'
-    'sidebar largebox largebox largebox largebox assetbox assetbox';
+    'sidebar largebox largebox largebox largebox longbox longbox';
     grid-template-columns: 7vw 14.6666666667vw 14.6666666667vw 14.6666666667vw 14.6666666667vw 14.6666666667vw auto;
     grid-template-rows: 50px 200px 200px 100px auto auto; 
     gap: 1em;

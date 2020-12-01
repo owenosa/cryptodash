@@ -12,7 +12,7 @@ function LongBox() {
             <div className="longbox_info">
                 <h3>No Transactions Yet</h3>
                 <MonetizationOn fontSize="large"/>
-                <p>Trades will be displayed here!</p>
+                <p>Trades will be displayed here on a real account!</p>
             </div>
 
         </div>

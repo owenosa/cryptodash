@@ -18,6 +18,10 @@ function App() {
   const [stellarAssets, setStellarAssets] = useState(0)
   const [tetherAssets, setTetherAssets] = useState(0)
 
+  const [inputNum, setInputNum] = useState(0)
+  const [selectedCoin, setSelectedCoin] = useState()
+  const [price, setPrice] = useState()
+  const [buy, setBuy] = useState(true);
   useEffect(() => {
     fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false`)
     .then(response => response.json())
@@ -88,9 +92,15 @@ function App() {
             title={smallData[3].name}
             image={smallData[3].image} 
           />
-          
+
           {/* LongBox - Recent Operations */}
-          <LongBox />
+          <LongBox 
+            data = {smallData}
+            inputNum = {inputNum}
+            selectedCoin = {selectedCoin}
+            price = {price}
+            buy = {buy}
+          />
           
           {/* HorizontalBox - Buy/Sell Coins */}
           <HorzBox 
@@ -109,6 +119,14 @@ function App() {
           ethereumAssets={ethereumAssets}
           stellarAssets={stellarAssets}
           tetherAssets={tetherAssets}
+          inputNum = {inputNum}
+          setInputNum = {setInputNum}
+          selectedCoin = {selectedCoin}
+          setSelectedCoin = {setSelectedCoin}
+          price = {price}
+          setPrice = {setPrice}
+          buy = {buy}
+          setBuy = {setBuy}
           />
 
           {/* LargeBox - Graph (BTC) */}
