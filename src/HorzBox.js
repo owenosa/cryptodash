@@ -1,9 +1,9 @@
-import React, {useState, useEffect} from 'react'
+import React, {useEffect} from 'react'
 import './HorzBox.css';
 import numeral from 'numeral'
 import SwapHorizIcon from '@material-ui/icons/SwapHoriz';
 
-function HorzBox(props) {
+function HorzBox(props, {buy}) {
 
     function unitsChange(e){
         props.setInputNum(parseInt(e.target.value))
@@ -86,7 +86,8 @@ function HorzBox(props) {
     useEffect(() => {
         props.setSelectedCoin("")
         props.setPrice(0.00)
-    }, [props.buy])
+        // eslint-disable-next-line
+    }, [buy])
 
     return (
         <div className="horzBox">

@@ -27,6 +27,7 @@ const fetchData = useCallback(async () => {
         setChartNums(y);
       }
     }
+    // eslint-disable-next-line 
   }, [props]);
 
   const chart = useCallback(async () => {

@@ -62,7 +62,7 @@ function App() {
             title={smallData[0].name}
             image={smallData[0].image}
           />
-          
+        
           {/* SmallBox - ethereum */}
           <SmallBox className="ethereum" 
             id={smallData[1].id}

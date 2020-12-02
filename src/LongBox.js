@@ -1,8 +1,6 @@
 import React from 'react'
 import {MonetizationOn } from '@material-ui/icons';
 
-import Recent from './Recent';
-
 import './LongBox.css';
 
 function LongBox() {

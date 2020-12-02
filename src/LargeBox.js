@@ -54,6 +54,7 @@ function LargeBox() {
             setChartNums(y);
           }
         }
+        // eslint-disable-next-line
       }, [currentCoin, currentTime]);
 
       const chart = useCallback(async () => {

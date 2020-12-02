@@ -12,7 +12,6 @@ function BalanceBox(props) {
             
             <div className="smallBox_numbers">
                 <h1 className="smallBox-price">$ {numeral(props.currentPrice).format('0,0.00')}</h1>
-                <h5 className="smallBox-roc"></h5>
             </div>
             
             <div className="smallBox_graph">
