@@ -104,7 +104,6 @@ function App() {
           
           {/* HorizontalBox - Buy/Sell Coins */}
           <HorzBox 
-          currentBalance= "10,000"
           bitcoinPrice={smallData[0].current_price}
           ethereumPrice={smallData[1].current_price}
           stellarPrice={smallData[10].current_price}
